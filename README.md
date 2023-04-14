@@ -13,9 +13,11 @@ Ventoy supports mirroring the boot menu selection screen to the motherboard COM 
 
 Using an ESP32 module I connected a COM port module like this:
 
+![wiring-diagram](https://user-images.githubusercontent.com/6509533/232055543-6ee5cb83-e1e6-4b02-ba04-a77a95813440.jpg)
 
 My PC motherboard has a COM port socket but no cable to plug into it, so bought this adaptor cable.
 
+![Screenshot 2023-04-14 at 14 14 53](https://user-images.githubusercontent.com/6509533/232055584-6382896a-dad0-480b-9000-c0747c3a1cd6.jpg)
 
 Lastly I flashed ESPhome with is config file which presents button you can press in HomeAssistant to move the cursor up / down and press return. You can also set the correct boot position and turn on the PC, the ESPhome device detects when Ventoy has booted to the menu and will move the cursor to the correct position and press enter.
 
