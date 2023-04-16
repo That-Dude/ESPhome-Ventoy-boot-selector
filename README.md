@@ -1,5 +1,7 @@
 # ESPhome Ventoy boot selector
- Use ESPhome to set the Ventoy boot option via RS232 UART
+ Use ESPhome to boot you PC and choose which OS to boot via the COM port (RS232 UART).
+
+![Screenshot 2023-04-16 at 17 15 46](https://user-images.githubusercontent.com/6509533/232326230-1ae06160-2678-4d83-b552-7d3397352faa.jpg)
 
 # Overview
 I have a PC with multiple operating systems installed. To achieve this I have an external SSD drive attached via USB, the drive is setup with the Ventoy installer and each OS has it's own VHDX on the same drive. Upon boot Ventoy finds each of the VHDX files and presents them for selection. This all works flawlessly, I have Win10, Win11 and Ubuntu and others working great.
