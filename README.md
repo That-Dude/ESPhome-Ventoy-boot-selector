@@ -2,10 +2,14 @@
  Use ESPhome to set the Ventoy boot option via RS232 UART
 
 # Overview
-I have a PC with multiple operating systems installed. To achieve this I have an external SSD drive attached via USB, the drive is setup with the Ventoy installer and each OS has it's own VHDX on the same drive. Upon boot Ventoy finds each of the VHDX files and presents them for boot. This all works flawlessly, I have Win10, Win11 and Ubuntu working great.
+I have a PC with multiple operating systems installed. To achieve this I have an external SSD drive attached via USB, the drive is setup with the Ventoy installer and each OS has it's own VHDX on the same drive. Upon boot Ventoy finds each of the VHDX files and presents them for selection. This all works flawlessly, I have Win10, Win11 and Ubuntu and others working great.
+
+
 
 ## The Problem
-I would like to use this PC in headless mode with no screen, keyboard or mouse attached. But I still want to control which OS is booted from the Ventoy bootloader.
+I would like to use this PC headlessly with no screen, keyboard or mouse attached. But I still want to control which OS is booted from the Ventoy bootloader.
+
+I would also like to turn the PC on and off, and have a sensor in Home Assitant updated with the current status of the PC.
 
 ## Solution
 Ventoy supports mirroring the boot menu selection screen to the motherboard COM port (UART), to do this you just need to add a line to the ventoy.json file like this:
