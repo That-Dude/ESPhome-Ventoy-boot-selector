@@ -4,9 +4,9 @@
 ![Screenshot 2023-04-16 at 17 15 46](https://user-images.githubusercontent.com/6509533/232326230-1ae06160-2678-4d83-b552-7d3397352faa.jpg)
 
 # Overview
-I have a PC with multiple operating systems installed. To achieve this I have an external SSD drive attached via USB, the drive is setup with the Ventoy installer and each OS has it's own VHDX on the same drive which VenToy can boot directly in bare metal style.
+I have a PC with multiple operating systems installed. To achieve this I have an external SSD drive attached via USB, the drive is setup with the Ventoy bootloader and each OS has it's own VHDX on the same drive which VenToy can boot directly in bare metal style.
 
-When the PC starts Ventoy finds each of the VHDX files and presents them for selection. This all works flawlessly, I have Win10, Win11 and Ubuntu and others working great.
+When the PC starts the Ventoy bootloader finds each of the VHDX files and presents them for selection. This all works flawlessly, I have Win10, Win11 and Ubuntu and others working great.
 
 I also wanted to turn the PC on/off remmotely and integrate a sensor showing the on/off state. For this I used a couple of 1k resistors connected to pc817 opto-couplers, one is attache the motherboard header pins which turn the PC on and off and the other is connected the LED pins, this is how I'm detecting if the PC is on or off.
 
